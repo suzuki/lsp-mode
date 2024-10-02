@@ -1570,6 +1570,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-futhark/" class="md-nav__link">
+        Futhark
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gdscript/" class="md-nav__link">
         GDScript
       </a>
@@ -2382,7 +2396,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-ruff-lsp/" class="md-nav__link">
+      <a href="../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
       </a>
     </li>
@@ -3755,6 +3769,26 @@
     requests.</li>
 <li>Add <code>lsp-flush-delayed-changes-before-next-message</code> customization
     point to enforce throttling document change notifications.</li>
+<li>Add <code>lsp-sql-show-tables</code> command.</li>
+<li>Fix bug in <code>rust-analyzer.check.features</code> configuration via
+    <code>lsp-rust-checkonsave-features</code> Emacs setting: we were defaulting to
+    <code>[]</code>, but <code>rust-analyzer</code> defaults to inheriting the value from
+    <code>rust-analyzer.cargo.features</code>. The bug resulted in code hidden
+    behind features not getting type checked when those features were
+    enabled by setting <code>rust-analyzer.cargo.features</code> via the
+    <code>lsp-rust-features</code> Emacs setting.</li>
+<li>Change <code>ruff-lsp</code> to <code>ruff</code> for python lsp client. All <code>ruff-lsp</code>
+    customizable variable change to <code>ruff</code>. Lsp server command now is
+    <code>["ruff" "server"]</code> instead of <code>["ruff-lsp"]</code>.</li>
+<li>Add futhark support</li>
+<li>Optimize overlay creation by checking window visibility first</li>
+<li>Replace the per-interface <code>(INTERFACE ...)</code> pcase forms with a
+    single, unified <code>(lsp-interface INTERFACE ...)</code> form. The
+    per-interface forms are no longer generated. <strong>This is a breaking
+    change.</strong> (See #4430.)</li>
+<li>If asm-lsp is installed, lsp-asm won't try to download it to cache
+    store</li>
+<li>Fix lsp-unzip on windows when unzip was found on the PATH</li>
 </ul>
 <h2 id="900">9.0.0<a class="headerlink" href="#900" title="Permanent link">#</a></h2>
 <ul>
@@ -4335,7 +4369,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2024</span>
       
     
   </small>
