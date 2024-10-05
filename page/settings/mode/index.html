@@ -5125,7 +5125,7 @@ before saving a document.</p>
 <p>List of the clients to be automatically required.</p>
 <hr />
 <h3 id="lsp-completion-default-behaviour"><code>lsp-completion-default-behaviour</code><a class="headerlink" href="#lsp-completion-default-behaviour" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (const :insert :tag Default completion inserts) (const :replace :tag Default completion replaces))</code></p>
+<p><em>Type:</em> <code>(choice (const :tag Default completion inserts :insert) (const :tag Default completion replaces :replace))</code></p>
 <p><em>Default:</em> <code>:replace</code></p>
 <p>Default behaviour of <code>InsertReplaceEdit</code>.</p>
 <hr />
@@ -5596,7 +5596,7 @@ in place.</p>
 <hr />
 <h3 id="lsp-unzip-script"><code>lsp-unzip-script</code><a class="headerlink" href="#lsp-unzip-script" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>(closure (tramp-ssh-controlmaster-options tramp-use-ssh-controlmaster-options view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((and (eq system-type 'windows-nt) (executable-find powershell)) lsp-ext-pwsh-script) ((executable-find unzip) lsp-ext-unzip-script) ((executable-find powershell) lsp-ext-pwsh-script) (t nil)))</code></p>
+<p><em>Default:</em> <code>(closure (tramp-ssh-controlmaster-options tramp-use-ssh-controlmaster-options view-inhibit-help-message lsp-help-mode-abbrev-table lsp-help-mode-syntax-table eldoc-documentation-default cl-struct-lsp--log-entry-tags cl-struct-lsp-session-tags cl-struct-lsp--workspace-tags cl-struct-lsp--registered-capability-tags lsp-mode-menu cl-struct-lsp--folding-range-tags cl-struct-lsp-watch-tags cl-struct-lsp--client-tags lsp--log-lines company-minimum-prefix-length dap-ui-menu-items dap-auto-configure-mode yas-also-auto-indent-first-line yas-wrap-around-region yas-indent-line yas-inhibit-overlay-modification-protection t) nil (cond ((and (eq system-type 'windows-nt) (executable-find pwsh)) lsp-ext-pwsh-script) ((and (eq system-type 'windows-nt) (executable-find powershell)) lsp-ext-powershell-script) ((executable-find unzip) lsp-ext-unzip-script) ((executable-find pwsh) lsp-ext-pwsh-script) (t nil)))</code></p>
 <p>The script to unzip.</p>
 <hr />
 <h3 id="lsp-verify-signature"><code>lsp-verify-signature</code><a class="headerlink" href="#lsp-verify-signature" title="Permanent link">#</a></h3>
@@ -5633,7 +5633,7 @@ The hook will receive two parameters list of added and removed folders.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 5, 2024</span>
       
     
   </small>
