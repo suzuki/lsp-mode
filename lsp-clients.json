@@ -90,6 +90,15 @@
     "debugger": "Not available"
   },
   {
+    "name": "buf",
+    "full-name": "buf CLI (Beta)",
+    "server-name": "buf",
+    "server-url": "https://github.com/bufbuild/buf",
+    "installation": "npm install -g @bufbuild/buf",
+    "installation-url": "https://buf.build/docs/installation",
+    "debugger": "Not available"
+  },
+  {
     "name": "bufls",
     "full-name": "buf-language-server",
     "server-name": "bufls",
@@ -105,6 +114,14 @@
     "server-url": "https://github.com/camel-tooling/camel-language-server/",
     "installation": "Automatic by lsp-mode with `lsp-install-server`",
     "lsp-install-server": "camells",
+    "debugger": "Not available"
+  },
+  {
+    "name": "copilot",
+    "full-name": "Github Copilot",
+    "server-name": "copilot-node-server",
+    "server-url": "https://www.npmjs.com/package/copilot-node-server",
+    "installation-url": "https://www.npmjs.com/package/copilot-node-server",
     "debugger": "Not available"
   },
   {
@@ -488,6 +505,15 @@
     "debugger": "Yes (Firefox/Chrome)"
   },
   {
+    "name": "typespec",
+    "full-name": "TypeSpec",
+    "server-name": "tsp server",
+    "server-url": "https://github.com/microsoft/typespec/tree/main/packages/compiler",
+    "installation": "npm i -g @typespec/compiler",
+    "lsp-install-server": "@typespec/compiler",
+    "debugger": "Yes (Firefox/Chrome)"
+  },
+  {
     "name": "deno",
     "common-group-name": "javascript",
     "full-name": "Javascript/Typescript (deno)",
@@ -594,6 +620,16 @@
     "debugger": "Not available"
   },
   {
+    "name": "fennel",
+    "common-group-name": "fennel",
+    "full-name": "Fennel",
+    "server-name": "fennel-ls",
+    "installation-url": "https://git.sr.ht/~xerool/fennel-ls",
+    "server-url": "https://git.sr.ht/~xerool/fennel-ls",
+    "installation": "luarocks install fennel-ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "magik",
     "full-name": "GE Smallworld Magik",
     "server-name": "magik-language-server",
@@ -659,6 +695,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "nextflow",
+    "full-name": "Nextflow",
+    "server-name": "nextflow-language-server",
+    "server-url": "https://github.com/nextflow-io/language-server",
+    "installation-url": "https://github.com/nextflow-io/language-server#build",
+    "debugger": "Not available"
+  },
+  {
     "name": "nginx",
     "full-name": "Nginx",
     "server-name": "nginx-lsp",
@@ -691,7 +735,7 @@
     "debugger": "Not available"
   },
   {
-    "name": "nix",
+    "name": "nix-nixd",
     "full-name": "Nix (nixd language server)",
     "server-name": "nixd",
     "server-url": "https://github.com/nix-community/nixd",
@@ -699,7 +743,7 @@
     "debugger": "Not available"
   },
   {
-    "name": "nix",
+    "name": "nix-rnix",
     "full-name": "Nix (rnix language server)",
     "server-name": "rnix-lsp",
     "server-url": "https://github.com/nix-community/rnix-lsp",
@@ -941,6 +985,15 @@
     "debugger": "Yes"
   },
   {
+    "name": "roc",
+    "full-name": "Roc",
+    "server-name": "roc_language_server",
+    "server-url": "https://github.com/roc-lang/roc/tree/main/crates/language_server",
+    "installation-url": "https://github.com/roc-lang/roc/tree/main/crates/language_server",
+    "installation": "Along with the compiler",
+    "debugger": "Not available"
+  },
+  {
     "name": "ruby-lsp",
     "full-name": "Ruby (ruby-lsp)",
     "server-name": "ruby-lsp",
@@ -1145,6 +1198,13 @@
     "debugger": "Not available"
   },
   {
+    "name": "ts-query",
+    "full-name": "Tree-sitter Query",
+    "server-name": "ts-query-lsp",
+    "server-url": "https://github.com/ribru17/ts_query_ls",
+    "debugger": "Not available"
+  },
+  {
     "name": "typeprof",
     "full-name": "Ruby (TypeProf)",
     "server-name": "typeprof",
@@ -1253,6 +1313,14 @@
     "server-url": "https://github.com/redhat-developer/yaml-language-server",
     "installation": "npm install -g yaml-language-server",
     "lsp-install-server": "yamlls",
+    "debugger": "Not available"
+  },
+  {
+    "name": "helm",
+    "full-name": "YAML (helm-ls)",
+    "server-name": "helm-ls",
+    "server-url": "https://github.com/mrjosh/helm-ls",
+    "installation-url": "https://github.com/mrjosh/helm-ls?tab=readme-ov-file#installation-with-a-package-manager",
     "debugger": "Not available"
   },
   {

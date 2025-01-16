@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1614,6 +1628,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -1976,6 +2004,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -2049,13 +2091,6 @@
           <li class="md-nav__item">
   <a href="#lsp-magik-download-url-lsp" class="md-nav__link">
     lsp-magik-download-url-lsp
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-magik-java-home" class="md-nav__link">
-    lsp-magik-java-home
   </a>
   
 </li>
@@ -2262,6 +2297,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2290,7 +2339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2304,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2668,6 +2717,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3004,6 +3067,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3020,6 +3097,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3188,6 +3279,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3716,13 +3821,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-magik-java-home" class="md-nav__link">
-    lsp-magik-java-home
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#lsp-magik-java-path" class="md-nav__link">
     lsp-magik-java-path
   </a>
@@ -3894,11 +3992,6 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <p><em>Default:</em> <code>https://github.com/StevenLooman/magik-tools/releases/download/0.10.1/magik-language-server-0.10.1.jar</code></p>
 <p>URL of LSP server to download.</p>
 <hr />
-<h3 id="lsp-magik-java-home"><code>lsp-magik-java-home</code><a class="headerlink" href="#lsp-magik-java-home" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>nil</code></p>
-<p>Path to Java Runtime, Java 17 minimum.</p>
-<hr />
 <h3 id="lsp-magik-java-path"><code>lsp-magik-java-path</code><a class="headerlink" href="#lsp-magik-java-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
 <p><em>Default:</em> <code>(closure (t) nil (cond ((eq system-type 'windows-nt) (or (lsp-resolve-value (executable-find (expand-file-name bin/java (getenv JAVA_HOME)))) (lsp-resolve-value (executable-find java)))) (t java)))</code></p>
@@ -3977,7 +4070,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>
@@ -3995,7 +4088,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../lsp-lua-lsp/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lua (Lua-Lsp)" rel="prev">
+        <a href="../lsp-fennel/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fennel" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4004,7 +4097,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
               <span class="md-footer__direction">
                 Previous
               </span>
-              Lua (Lua-Lsp)
+              Fennel
             </div>
           </div>
         </a>

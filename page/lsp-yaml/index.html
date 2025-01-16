@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1614,6 +1628,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -1978,6 +2006,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2076,6 +2118,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2104,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2118,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2482,6 +2538,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -2818,6 +2888,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -2834,6 +2918,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3189,6 +3287,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
+      </a>
     </li>
   
 
@@ -3934,11 +4046,10 @@ Limited for performance reasons.</p>
    Preserve: wrap prose as-is.</p>
 <hr />
 <h3 id="lsp-yaml-schema-extensions"><code>lsp-yaml-schema-extensions</code><a class="headerlink" href="#lsp-yaml-schema-extensions" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>list</code></p>
+<p><em>Type:</em> <code>(repeat lsp--yaml-schema-extension-type)</code></p>
 <p><em>Default:</em> <code>(((name . Kubernetes v1.30.3) (description . Kubernetes v1.30.3 manifest schema definition) (url . https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.30.3-standalone-strict/all.json) (fileMatch . [*-k8s.yaml *-k8s.yml])))</code></p>
 <p>User defined schemas that extend default schema store.
-Used in <code>lsp-yaml--get-supported-schemas</code> to supplement schemas provided by
-<code>lsp-yaml-schema-store-uri</code>.</p>
+Used in <code>lsp-yaml--get-supported-schemas' to supplement schemas provided by</code>lsp-yaml-schema-store-uri'.</p>
 <hr />
 <h3 id="lsp-yaml-schema-store-enable"><code>lsp-yaml-schema-store-enable</code><a class="headerlink" href="#lsp-yaml-schema-store-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3984,7 +4095,7 @@ Used in <code>lsp-yaml--get-supported-schemas</code> to supplement schemas provi
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

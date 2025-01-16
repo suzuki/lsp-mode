@@ -1293,8 +1293,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1685,6 +1699,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -2049,6 +2077,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2147,6 +2189,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2175,7 +2231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2189,7 +2245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2553,6 +2609,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -2889,6 +2959,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -2905,6 +2989,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3073,6 +3171,20 @@
     <li class="md-nav__item">
       <a href="../../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3653,7 +3765,7 @@
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>When non-nil, clean the diagnostics on change.</p>
-<p>Note that when that setting is nil, <code>lsp-mode</code> will show stale
+<p>Note that when that setting is nil, `lsp-mode' will show stale
 diagnostics until server publishes the new set of diagnostics</p>
 <hr />
 <h3 id="lsp-diagnostics-attributes"><code>lsp-diagnostics-attributes</code><a class="headerlink" href="#lsp-diagnostics-attributes" title="Permanent link">#</a></h3>
@@ -3661,13 +3773,13 @@ diagnostics until server publishes the new set of diagnostics</p>
 <p><em>Default:</em> <code>((unnecessary :foreground gray) (deprecated :strike-through t))</code></p>
 <p>The Attributes used on the diagnostics.
 List containing (tag attributes) where tag is the LSP diagnostic tag and
-attributes is a <code>plist</code> containing face attributes which will be applied
+attributes is a `plist' containing face attributes which will be applied
 on top the flycheck face for that error level.</p>
 <hr />
 <h3 id="lsp-diagnostics-disabled-modes"><code>lsp-diagnostics-disabled-modes</code><a class="headerlink" href="#lsp-diagnostics-disabled-modes" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat symbol)</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>A list of major models for which <code>lsp-diagnostics-mode</code> should be disabled.</p>
+<p>A list of major models for which `lsp-diagnostics-mode' should be disabled.</p>
 <hr />
 <h3 id="lsp-diagnostics-flycheck-default-level"><code>lsp-diagnostics-flycheck-default-level</code><a class="headerlink" href="#lsp-diagnostics-flycheck-default-level" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const error) (const warning) (const info))</code></p>
@@ -3687,7 +3799,7 @@ on top the flycheck face for that error level.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

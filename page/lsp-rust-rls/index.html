@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1614,6 +1628,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -1978,6 +2006,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2076,6 +2118,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2104,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2118,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2470,6 +2526,20 @@
     <li class="md-nav__item">
       <a href="../lsp-racket-language-server/" class="md-nav__link">
         Racket (Theia)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
       </a>
     </li>
   
@@ -3115,6 +3185,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3131,6 +3215,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3299,6 +3397,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4148,25 +4260,25 @@ I.e., check all targets and integration tests too.</p>
 <h3 id="lsp-rust-build-bin"><code>lsp-rust-build-bin</code><a class="headerlink" href="#lsp-rust-build-bin" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const :tag None nil) (string :tag Binary))</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>If non-nil, checks the project as if you passed <code>-- bin &lt;build_bin&gt;</code>
+<p>If non-nil, checks the project as if you passed `-- bin <build_bin>'
 argument to cargo.</p>
-<p>Mutually exclusive with <code>lsp-rust-build-lib</code>. (Unstable)</p>
+<p>Mutually exclusive with `lsp-rust-build-lib'. (Unstable)</p>
 <hr />
 <h3 id="lsp-rust-build-command"><code>lsp-rust-build-command</code><a class="headerlink" href="#lsp-rust-build-command" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (const :tag None nil) (string :tag Command))</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>EXPERIMENTAL (requires <code>rust.unstable_features</code>)
+<p>EXPERIMENTAL (requires `rust.unstable_features')
 If set, executes a given program responsible for rebuilding save-analysis to be
 loaded by the RLS. The program given should output a list of resulting .json
 files on stdout.</p>
-<p>Implies <code>rust.build_on_save</code>: true.</p>
+<p>Implies `rust.build_on_save': true.</p>
 <hr />
 <h3 id="lsp-rust-build-lib"><code>lsp-rust-build-lib</code><a class="headerlink" href="#lsp-rust-build-lib" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>If non-nil, checks the project as if you passed the <code>--lib</code> argument to
+<p>If non-nil, checks the project as if you passed the `--lib' argument to
 cargo.</p>
-<p>Mutually exclusive with, and preferred over, <code>lsp-rust-build-bin</code>. (Unstable)</p>
+<p>Mutually exclusive with, and preferred over, `lsp-rust-build-bin'. (Unstable)</p>
 <hr />
 <h3 id="lsp-rust-build-on-save"><code>lsp-rust-build-on-save</code><a class="headerlink" href="#lsp-rust-build-on-save" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -4176,7 +4288,7 @@ cargo.</p>
 <h3 id="lsp-rust-cfg-test"><code>lsp-rust-cfg-test</code><a class="headerlink" href="#lsp-rust-cfg-test" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>If non-nil, checks the project as if you were running <code>cargo test</code> rather
+<p>If non-nil, checks the project as if you were running `cargo test' rather
 than cargo build.</p>
 <p>I.e., compiles (but does not run) test code.</p>
 <hr />
@@ -4191,9 +4303,9 @@ than cargo build.</p>
 <p>Controls eagerness of clippy diagnostics when available.
 Valid values are (case-insensitive):
  - "off": Disable clippy lints.
- - "opt-in": Clippy lints are shown when crates specify <code>#![warn(clippy)]</code>.
+ - "opt-in": Clippy lints are shown when crates specify `#![warn(clippy)]'.
  - "on": Clippy lints enabled for all crates in workspace.</p>
-<p>You need to install clippy via rustup if you haven`t already.</p>
+<p>You need to install clippy via rustup if you haven't already.</p>
 <hr />
 <h3 id="lsp-rust-crate-blocklist"><code>lsp-rust-crate-blocklist</code><a class="headerlink" href="#lsp-rust-crate-blocklist" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>lsp-string-vector</code></p>
@@ -4298,7 +4410,7 @@ the latest build duration.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

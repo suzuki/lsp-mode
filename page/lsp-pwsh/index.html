@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1614,6 +1628,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -1978,6 +2006,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2076,6 +2118,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2104,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2118,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2738,6 +2794,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3074,6 +3144,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3090,6 +3174,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3258,6 +3356,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4069,12 +4181,12 @@ When disabled, the entire folded region is hidden.</p>
 <p>Places open brace on the same line as its associated statement.</p>
 <hr />
 <h3 id="lsp-pwsh-code-formatting-pipeline-indentation-style"><code>lsp-pwsh-code-formatting-pipeline-indentation-style</code><a class="headerlink" href="#lsp-pwsh-code-formatting-pipeline-indentation-style" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag IncreaseIndentationForFirstPipeline IncreaseIndentationAfterEveryPipeline NoIndentation))</code></p>
+<p><em>Type:</em> <code>(choice (const IncreaseIndentationForFirstPipeline) (const IncreaseIndentationAfterEveryPipeline) (const NoIndentation))</code></p>
 <p><em>Default:</em> <code>NoIndentation</code></p>
 <p>Multi-line pipeline style settings.</p>
 <hr />
 <h3 id="lsp-pwsh-code-formatting-preset"><code>lsp-pwsh-code-formatting-preset</code><a class="headerlink" href="#lsp-pwsh-code-formatting-preset" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Custom Allman OTBS Stroustrup))</code></p>
+<p><em>Type:</em> <code>(choice (const Custom) (const Allman) (const OTBS) (const Stroustrup))</code></p>
 <p><em>Default:</em> <code>Custom</code></p>
 <p>Sets the codeformatting options to follow the given indent style.
 Sets in a way that is compatible with PowerShell syntax.
@@ -4088,17 +4200,17 @@ For more information about the brace styles please refer to https://github.com/P
 <h3 id="lsp-pwsh-code-formatting-whitespace-after-separator"><code>lsp-pwsh-code-formatting-whitespace-after-separator</code><a class="headerlink" href="#lsp-pwsh-code-formatting-whitespace-after-separator" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Adds a space after a separator (<code>,</code> and <code>;</code>).</p>
+<p>Adds a space after a separator (',' and ';').</p>
 <hr />
 <h3 id="lsp-pwsh-code-formatting-whitespace-around-operator"><code>lsp-pwsh-code-formatting-whitespace-around-operator</code><a class="headerlink" href="#lsp-pwsh-code-formatting-whitespace-around-operator" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Adds spaces before and after an operator (<code>=</code>, <code>+</code>, <code>-</code>, etc.).</p>
+<p>Adds spaces before and after an operator ('=', '+', '-', etc.).</p>
 <hr />
 <h3 id="lsp-pwsh-code-formatting-whitespace-around-pipe"><code>lsp-pwsh-code-formatting-whitespace-around-pipe</code><a class="headerlink" href="#lsp-pwsh-code-formatting-whitespace-around-pipe" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Adds a space before and after the pipeline operator (<code>|</code>).</p>
+<p>Adds a space before and after the pipeline operator ('|').</p>
 <hr />
 <h3 id="lsp-pwsh-code-formatting-whitespace-before-open-brace"><code>lsp-pwsh-code-formatting-whitespace-before-open-brace</code><a class="headerlink" href="#lsp-pwsh-code-formatting-whitespace-before-open-brace" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -4114,13 +4226,14 @@ associated conditional expression.</p>
 <h3 id="lsp-pwsh-code-formatting-whitespace-inside-brace"><code>lsp-pwsh-code-formatting-whitespace-inside-brace</code><a class="headerlink" href="#lsp-pwsh-code-formatting-whitespace-inside-brace" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Adds a space after an opening brace (<code>{</code>) and before a closing brace (<code>}</code>).</p>
+<p>Adds a space after an opening brace ('{') and before a closing brace ('}').</p>
 <hr />
 <h3 id="lsp-pwsh-developer-editor-services-log-level"><code>lsp-pwsh-developer-editor-services-log-level</code><a class="headerlink" href="#lsp-pwsh-developer-editor-services-log-level" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Diagnostic Verbose Normal Warning Error))</code></p>
+<p><em>Type:</em> <code>(choice (const Diagnostic) (const Verbose) (const Normal) (const Warning) (const Error))</code></p>
 <p><em>Default:</em> <code>Normal</code></p>
 <p>Sets the log level for the PowerShell Editor Services host executable.
-Valid values are <code>Diagnostic</code>, <code>Verbose</code>, <code>Normal</code>, <code>Warning</code>, and <code>Error</code></p>
+Valid values are ='Diagnostic=', ='Verbose=', ='Normal=',
+ ='Warning=', and ='Error='</p>
 <hr />
 <h3 id="lsp-pwsh-developer-editor-services-wait-for-debugger"><code>lsp-pwsh-developer-editor-services-wait-for-debugger</code><a class="headerlink" href="#lsp-pwsh-developer-editor-services-wait-for-debugger" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -4155,11 +4268,11 @@ extension.</p>
 <p>GitHub latest asset template url.</p>
 <hr />
 <h3 id="lsp-pwsh-help-completion"><code>lsp-pwsh-help-completion</code><a class="headerlink" href="#lsp-pwsh-help-completion" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Disabled BlockComment LineComment))</code></p>
+<p><em>Type:</em> <code>(choice (const Disabled) (const BlockComment) (const LineComment))</code></p>
 <p><em>Default:</em> <code>BlockComment</code></p>
-<p>Controls the comment-based help completion behavior triggered by typing <code>##</code>.
-Set the generated help style with <code>BlockComment</code> or <code>LineComment</code>.
-Disable the feature with <code>Disabled</code>.</p>
+<p>Controls the comment-based help completion behavior triggered by typing '##'.
+Set the generated help style with ='BlockComment=' or ='LineComment='.
+Disable the feature with ='Disabled='.</p>
 <hr />
 <h3 id="lsp-pwsh-script-analysis-enable"><code>lsp-pwsh-script-analysis-enable</code><a class="headerlink" href="#lsp-pwsh-script-analysis-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -4183,7 +4296,7 @@ or enter a path relative to your workspace.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

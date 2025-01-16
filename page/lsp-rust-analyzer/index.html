@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1614,6 +1628,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -1978,6 +2006,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2076,6 +2118,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2104,7 +2160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2118,7 +2174,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2470,6 +2526,20 @@
     <li class="md-nav__item">
       <a href="../lsp-racket-language-server/" class="md-nav__link">
         Racket (Theia)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
       </a>
     </li>
   
@@ -2852,6 +2922,13 @@
           <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-cargo-watch-enable" class="md-nav__link">
     lsp-rust-analyzer-cargo-watch-enable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-cfg-set-test" class="md-nav__link">
+    lsp-rust-analyzer-cfg-set-test
   </a>
   
 </li>
@@ -3520,6 +3597,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3536,6 +3627,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3704,6 +3809,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4433,6 +4552,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#lsp-rust-analyzer-cfg-set-test" class="md-nav__link">
+    lsp-rust-analyzer-cfg-set-test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#lsp-rust-analyzer-check-all-targets" class="md-nav__link">
     lsp-rust-analyzer-check-all-targets
   </a>
@@ -5017,7 +5143,7 @@ modifying the signature that is displayed by eldoc.</p>
 <h3 id="lsp-rust-analyzer-cargo-auto-reload"><code>lsp-rust-analyzer-cargo-auto-reload</code><a class="headerlink" href="#lsp-rust-analyzer-cargo-auto-reload" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Automatically refresh project info via <code>cargo metadata</code> on <code>Cargo.toml</code> changes.</p>
+<p>Automatically refresh project info via <code>cargo metadata' on</code>Cargo.toml' changes.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-cargo-extra-args"><code>lsp-rust-analyzer-cargo-extra-args</code><a class="headerlink" href="#lsp-rust-analyzer-cargo-extra-args" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>lsp-string-vector</code></p>
@@ -5066,6 +5192,11 @@ The command should include <code>--message=format=json</code> or similar option.
 <p><em>Default:</em> <code>t</code></p>
 <p>Enable Cargo watch.</p>
 <hr />
+<h3 id="lsp-rust-analyzer-cfg-set-test"><code>lsp-rust-analyzer-cfg-set-test</code><a class="headerlink" href="#lsp-rust-analyzer-cfg-set-test" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>boolean</code></p>
+<p><em>Default:</em> <code>t</code></p>
+<p>force rust-analyzer to set <code>#[cfg(test)]</code> for the current crate / workspace.</p>
+<hr />
 <h3 id="lsp-rust-analyzer-check-all-targets"><code>lsp-rust-analyzer-check-all-targets</code><a class="headerlink" href="#lsp-rust-analyzer-check-all-targets" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
@@ -5112,7 +5243,7 @@ belongs to.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Toggles the additional completions that automatically add imports when
-completed. <code>lsp-completion-enable-additional-text-edit</code> must be non-nil
+completed. `lsp-completion-enable-additional-text-edit' must be non-nil
  for this feature to be fully enabled.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-completion-auto-self-enable"><code>lsp-rust-analyzer-completion-auto-self-enable</code><a class="headerlink" href="#lsp-rust-analyzer-completion-auto-self-enable" title="Permanent link">#</a></h3>
@@ -5295,7 +5426,7 @@ context while the cursor is on any <code>async</code> or <code>await</code> keyw
  If set to nil rust-analyzer will try to keep import styles consistent per file.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-import-granularity"><code>lsp-rust-analyzer-import-granularity</code><a class="headerlink" href="#lsp-rust-analyzer-import-granularity" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (const crate :doc Merge imports from the same crate into a single use statement. This kind of nesting is only supported in Rust versions later than 1.24.) (const module :doc Merge imports from the same module into a single use statement.) (const item :doc Don’t merge imports at all, creating one import per item.) (const preserve :doc Do not change the granularity of any imports. For auto-import this has the same effect as</code>"item"'))`</p>
+<p><em>Type:</em> <code>(choice (const :tag Merge imports from the same crate into a single use statement. This kind of nesting is only supported in Rust versions later than 1.24. crate) (const :tag Merge imports from the same module into a single use statement. module) (const :tag Don’t merge imports at all, creating one import per item. item) (const :tag Do not change the granularity of any imports. For auto-import this has the same effect as</code>"item"' preserve))`</p>
 <p><em>Default:</em> <code>crate</code></p>
 <p>How imports should be grouped into use statements.</p>
 <hr />
@@ -5312,10 +5443,11 @@ https://rust-analyzer.github.io/manual.html#auto-import.
 <p>The path structure for newly inserted paths to use.
 Valid values are:
  - "plain": Insert import paths relative to the current module, using up to
-one <code>super</code> prefix if the parent module contains the requested item.
- - "by_self": Prefix all import paths with <code>self</code> if they don<code>t begin with</code>self<code>,</code>super<code>,</code>crate<code>or a crate name.
+one <code>super' prefix if the parent module contains the requested item.
+ - "by_self": Prefix all import paths with</code>self' if they don't begin with
+<code>self',</code>super', <code>crate' or a crate name.
  - "by_crate": Force import paths to be absolute by always starting
-them with</code>crate` or the crate name they refer to.</p>
+them with</code>crate' or the crate name they refer to.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-imports-merge-glob"><code>lsp-rust-analyzer-imports-merge-glob</code><a class="headerlink" href="#lsp-rust-analyzer-imports-merge-glob" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5355,7 +5487,7 @@ syntax highlighting.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Enable Proc macro support.
-Implies <code>lsp-rust-analyzer-cargo-run-build-scripts</code></p>
+Implies `lsp-rust-analyzer-cargo-run-build-scripts'</p>
 <hr />
 <h3 id="lsp-rust-analyzer-rustc-source"><code>lsp-rust-analyzer-rustc-source</code><a class="headerlink" href="#lsp-rust-analyzer-rustc-source" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(choice (file :tag Path) (const :tag None nil))</code></p>
@@ -5376,7 +5508,8 @@ for formatting.</p>
 <h3 id="lsp-rust-analyzer-rustfmt-rangeformatting-enable"><code>lsp-rust-analyzer-rustfmt-rangeformatting-enable</code><a class="headerlink" href="#lsp-rust-analyzer-rustfmt-rangeformatting-enable" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Enables the use of rustfmt<code>s unstable range formatting command for the</code>textDocument/rangeFormatting` request. The rustfmt option is unstable and only
+<p>Enables the use of rustfmt's unstable range formatting command for the
+<code>textDocument/rangeFormatting</code> request. The rustfmt option is unstable and only
 available on a nightly build.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-server-command"><code>lsp-rust-analyzer-server-command</code><a class="headerlink" href="#lsp-rust-analyzer-server-command" title="Permanent link">#</a></h3>
@@ -5393,7 +5526,7 @@ active, the various inlay format settings are not used.</p>
 <h3 id="lsp-rust-analyzer-store-path"><code>lsp-rust-analyzer-store-path</code><a class="headerlink" href="#lsp-rust-analyzer-store-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
 <p><em>Default:</em> <code>~/.emacs.d/.cache/lsp/rust/rust-analyzer</code></p>
-<p>The path to the file in which <code>rust-analyzer</code> will be stored.</p>
+<p>The path to the file in which `rust-analyzer' will be stored.</p>
 <hr />
 <h3 id="lsp-rust-analyzer-use-client-watching"><code>lsp-rust-analyzer-use-client-watching</code><a class="headerlink" href="#lsp-rust-analyzer-use-client-watching" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -5403,7 +5536,7 @@ active, the various inlay format settings are not used.</p>
 <h3 id="lsp-rust-analyzer-use-rustc-wrapper-for-build-scripts"><code>lsp-rust-analyzer-use-rustc-wrapper-for-build-scripts</code><a class="headerlink" href="#lsp-rust-analyzer-use-rustc-wrapper-for-build-scripts" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Use <code>RUSTC_WRAPPER=rust-analyzer</code> when running build scripts to avoid
+<p>Use `RUSTC_WRAPPER=rust-analyzer' when running build scripts to avoid
 compiling unnecessary things.</p>
 <hr />
 
@@ -5414,7 +5547,7 @@ compiling unnecessary things.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1786,6 +1800,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -2150,6 +2178,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2248,6 +2290,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2276,7 +2332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2290,7 +2346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2654,6 +2710,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -2990,6 +3060,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3006,6 +3090,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3174,6 +3272,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3862,7 +3974,7 @@
 <h3 id="lsp-elixir-dialyzer-enabled"><code>lsp-elixir-dialyzer-enabled</code><a class="headerlink" href="#lsp-elixir-dialyzer-enabled" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Run ElixirLS`s rapid Dialyzer when code is saved.</p>
+<p>Run ElixirLS's rapid Dialyzer when code is saved.</p>
 <hr />
 <h3 id="lsp-elixir-dialyzer-format"><code>lsp-elixir-dialyzer-format</code><a class="headerlink" href="#lsp-elixir-dialyzer-format" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -3873,7 +3985,7 @@
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Dialyzer options to enable or disable warnings.</p>
-<p>See Dialyzer`s documentation for options. Note that the "race_conditions"
+<p>See Dialyzer's documentation for options. Note that the "race_conditions"
 option is unsupported</p>
 <hr />
 <h3 id="lsp-elixir-enable-test-lenses"><code>lsp-elixir-enable-test-lenses</code><a class="headerlink" href="#lsp-elixir-enable-test-lenses" title="Permanent link">#</a></h3>
@@ -3893,14 +4005,14 @@ option is unsupported</p>
 <hr />
 <h3 id="lsp-elixir-ls-download-url"><code>lsp-elixir-ls-download-url</code><a class="headerlink" href="#lsp-elixir-ls-download-url" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>https://github.com/elixir-lsp/elixir-ls/releases/download/v0.22.0/elixir-ls-v0.22.0.zip</code></p>
+<p><em>Default:</em> <code>https://github.com/elixir-lsp/elixir-ls/releases/download/v0.25.0/elixir-ls-v0.25.0.zip</code></p>
 <p>Automatic download url for elixir-ls.</p>
 <hr />
 <h3 id="lsp-elixir-ls-version"><code>lsp-elixir-ls-version</code><a class="headerlink" href="#lsp-elixir-ls-version" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>v0.22.0</code></p>
+<p><em>Default:</em> <code>v0.25.0</code></p>
 <p>Elixir-Ls version to download.
-It has to be set before <code>lsp-elixir.el</code> is loaded and it has to
+It has to be set before `lsp-elixir.el' is loaded and it has to
 be available here: https://github.com/elixir-lsp/elixir-ls/releases/</p>
 <hr />
 <h3 id="lsp-elixir-mix-env"><code>lsp-elixir-mix-env</code><a class="headerlink" href="#lsp-elixir-mix-env" title="Permanent link">#</a></h3>
@@ -3923,7 +4035,7 @@ be available here: https://github.com/elixir-lsp/elixir-ls/releases/</p>
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>(language_server.sh)</code></p>
 <p>Command to start elixir-ls.</p>
-<p>Leave as default to let <code>executable-find</code> search for it.</p>
+<p>Leave as default to let `executable-find' search for it.</p>
 <hr />
 <h3 id="lsp-elixir-signature-after-complete"><code>lsp-elixir-signature-after-complete</code><a class="headerlink" href="#lsp-elixir-signature-after-complete" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3933,7 +4045,7 @@ be available here: https://github.com/elixir-lsp/elixir-ls/releases/</p>
 <h3 id="lsp-elixir-suggest-specs"><code>lsp-elixir-suggest-specs</code><a class="headerlink" href="#lsp-elixir-suggest-specs" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
-<p>Suggest @spec annotations inline using Dialyzer`s inferred success typings.
+<p>Suggest @spec annotations inline using Dialyzer's inferred success typings.
 This requires Dialyzer.</p>
 <hr />
 
@@ -3944,7 +4056,7 @@ This requires Dialyzer.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

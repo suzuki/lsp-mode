@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1602,6 +1616,20 @@
     <li class="md-nav__item">
       <a href="../lsp-gdscript/" class="md-nav__link">
         GDScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
       </a>
     </li>
   
@@ -2171,6 +2199,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2269,6 +2311,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2297,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2311,7 +2367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2675,6 +2731,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3011,6 +3081,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3027,6 +3111,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3195,6 +3293,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -3906,7 +4018,7 @@
 <p><em>Default:</em> <code>kotlin-language-server</code></p>
 <p>The kotlin-language-server executable to use.
 Leave as just the executable name to use the default behavior of finding the
-executable with <code>exec-path</code>.</p>
+executable with `exec-path'.</p>
 <hr />
 <h3 id="lsp-kotlin-compiler-jvm-target"><code>lsp-kotlin-compiler-jvm-target</code><a class="headerlink" href="#lsp-kotlin-compiler-jvm-target" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>string</code></p>
@@ -3940,7 +4052,7 @@ to Kotlin.</p>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>[Recommended] Specifies whether URIs inside JARs should be represented
-using the <code>kls</code>-scheme.</p>
+using the `kls'-scheme.</p>
 <hr />
 <h3 id="lsp-kotlin-inlayhints-enable-chainedhints"><code>lsp-kotlin-inlayhints-enable-chainedhints</code><a class="headerlink" href="#lsp-kotlin-inlayhints-enable-chainedhints" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
@@ -3984,7 +4096,7 @@ but path is nil, then the project root is used as a default.</p>
 <p>The URL for the language server download.</p>
 <hr />
 <h3 id="lsp-kotlin-trace-server"><code>lsp-kotlin-trace-server</code><a class="headerlink" href="#lsp-kotlin-trace-server" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag off messages verbose))</code></p>
+<p><em>Type:</em> <code>(choice (const off) (const messages) (const verbose))</code></p>
 <p><em>Default:</em> <code>off</code></p>
 <p>Traces the communication between VSCode and the Kotlin language server.</p>
 <hr />
@@ -4006,7 +4118,7 @@ but path is nil, then the project root is used as a default.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

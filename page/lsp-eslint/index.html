@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1905,6 +1919,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-gleam/" class="md-nav__link">
         Gleam
       </a>
@@ -2269,6 +2297,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2367,6 +2409,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2395,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2409,7 +2465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2773,6 +2829,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3109,6 +3179,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3125,6 +3209,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3293,6 +3391,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4104,7 +4216,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <p>Turns auto fix on save on or off.</p>
 <hr />
 <h3 id="lsp-eslint-code-action-disable-rule-comment"><code>lsp-eslint-code-action-disable-rule-comment</code><a class="headerlink" href="#lsp-eslint-code-action-disable-rule-comment" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>bool</code></p>
+<p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Controls whether code actions to add a rule-disabling comment should be shown.</p>
 <hr />
@@ -4117,7 +4229,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 - "sameLine": Add the comment on the same line that will be disabled.</p>
 <hr />
 <h3 id="lsp-eslint-code-action-show-documentation"><code>lsp-eslint-code-action-show-documentation</code><a class="headerlink" href="#lsp-eslint-code-action-show-documentation" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>bool</code></p>
+<p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>t</code></p>
 <p>Controls whether code actions to show documentation for an ESLint rule should
 be shown.</p>
@@ -4184,13 +4296,13 @@ workspace (see https://eslint.org/docs/user-guide/command-line-interface).</p>
 <h3 id="lsp-eslint-node-path"><code>lsp-eslint-node-path</code><a class="headerlink" href="#lsp-eslint-node-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>A path added to NODE_PATH when resolving the <code>eslint</code> module.</p>
+<p>A path added to NODE_PATH when resolving the `eslint' module.</p>
 <hr />
 <h3 id="lsp-eslint-options"><code>lsp-eslint-options</code><a class="headerlink" href="#lsp-eslint-options" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>alist</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>The ESLint options object to provide args normally passed to
-  <code>eslint</code> when executed from a command line (see
+  `eslint' when executed from a command line (see
   https://eslint.org/docs/latest/integrate/nodejs-api).</p>
 <hr />
 <h3 id="lsp-eslint-package-manager"><code>lsp-eslint-package-manager</code><a class="headerlink" href="#lsp-eslint-package-manager" title="Permanent link">#</a></h3>
@@ -4259,7 +4371,7 @@ from running.</p>
 <h3 id="lsp-eslint-unzipped-path"><code>lsp-eslint-unzipped-path</code><a class="headerlink" href="#lsp-eslint-unzipped-path" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>file</code></p>
 <p><em>Default:</em> <code>~/.emacs.d/.cache/lsp/eslint/unzipped</code></p>
-<p>The path to the file in which <code>eslint</code> will be stored.</p>
+<p>The path to the file in which `eslint' will be stored.</p>
 <hr />
 <h3 id="lsp-eslint-validate"><code>lsp-eslint-validate</code><a class="headerlink" href="#lsp-eslint-validate" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>(repeat string)</code></p>
@@ -4267,19 +4379,23 @@ from running.</p>
 <p>An array of language ids which should always be validated by ESLint.</p>
 <hr />
 <h3 id="lsp-eslint-warn-on-ignored-files"><code>lsp-eslint-warn-on-ignored-files</code><a class="headerlink" href="#lsp-eslint-warn-on-ignored-files" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>bool</code></p>
+<p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
 <p>Controls whether a warning should be emitted when a file is ignored.</p>
 <hr />
 <h3 id="lsp-eslint-working-directories"><code>lsp-eslint-working-directories</code><a class="headerlink" href="#lsp-eslint-working-directories" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>lsp-string-vector</code></p>
+<p><em>Type:</em> <code>(lsp-repeatable-vector (choice string (plist mode string)))</code></p>
 <p><em>Default:</em> <code>[]</code></p>
-<p>A vector of working directory names to use. Can be a pattern, an absolute path
-or a path relative to the workspace. Examples:
+<p>A vector of working directory names to use.
+Can be a pattern, an absolute path, a path relative to the workspace,
+or a supported mode such as "auto" or "location".
+Examples:
  - "/home/user/abc/"
  - "abc/"
  - (directory "abc") which is equivalent to "abc" above
  - (pattern "abc/*")
+ - (mode "auto")
+ - (mode "location")
 Note that the home directory reference ~/ is not currently supported, use
 /home/[user]/ instead.</p>
 <hr />
@@ -4291,7 +4407,7 @@ Note that the home directory reference ~/ is not currently supported, use
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>

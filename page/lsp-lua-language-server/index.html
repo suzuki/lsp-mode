@@ -1222,8 +1222,22 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-buf/" class="md-nav__link">
+        Buf/Protocol Buffers (Buf CLI)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-bufls/" class="md-nav__link">
-        Buf/Protocol Buffers
+        Buf/Protocol Buffers (Buf Language Server)
       </a>
     </li>
   
@@ -1602,6 +1616,20 @@
     <li class="md-nav__item">
       <a href="../lsp-gdscript/" class="md-nav__link">
         GDScript
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-copilot/" class="md-nav__link">
+        Github Copilot
       </a>
     </li>
   
@@ -2416,6 +2444,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-fennel/" class="md-nav__link">
+        Fennel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-magik/" class="md-nav__link">
         Magik
       </a>
@@ -2514,6 +2556,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-nextflow/" class="md-nav__link">
+        Nextflow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-nginx/" class="md-nav__link">
         Nginx
       </a>
@@ -2542,7 +2598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-nixd.md" class="md-nav__link">
+      <a href="../lsp-nix-nixd/" class="md-nav__link">
         Nix (nixd-lsp)
       </a>
     </li>
@@ -2556,7 +2612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-nix-rnix.md" class="md-nav__link">
+      <a href="../lsp-nix-rnix/" class="md-nav__link">
         Nix (rnix-lsp)
       </a>
     </li>
@@ -2920,6 +2976,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-roc/" class="md-nav__link">
+        Roc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-rpm-spec/" class="md-nav__link">
         RPM Spec
       </a>
@@ -3256,6 +3326,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-ts-query/" class="md-nav__link">
+        Tree-sitter Query
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-trunk/" class="md-nav__link">
         Trunk
       </a>
@@ -3272,6 +3356,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ttcn3/" class="md-nav__link">
         TTCN3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-typespec/" class="md-nav__link">
+        TypeSpec
       </a>
     </li>
   
@@ -3440,6 +3538,20 @@
     <li class="md-nav__item">
       <a href="../lsp-yaml/" class="md-nav__link">
         YAML
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+        YAML (helm-ls)
       </a>
     </li>
   
@@ -4417,12 +4529,12 @@
 <p>Location of Lua Language Server main.lua.</p>
 <hr />
 <h3 id="lsp-lua-color-mode"><code>lsp-lua-color-mode</code><a class="headerlink" href="#lsp-lua-color-mode" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Grammar Semantic))</code></p>
+<p><em>Type:</em> <code>(choice (const Grammar) (const Semantic))</code></p>
 <p><em>Default:</em> <code>Semantic</code></p>
 <p>Color mode.</p>
 <hr />
 <h3 id="lsp-lua-completion-call-snippet"><code>lsp-lua-completion-call-snippet</code><a class="headerlink" href="#lsp-lua-completion-call-snippet" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Disable Both Replace))</code></p>
+<p><em>Type:</em> <code>(choice (const Disable) (const Both) (const Replace))</code></p>
 <p><em>Default:</em> <code>Disable</code></p>
 <p>Shows function call snippets.</p>
 <hr />
@@ -4440,7 +4552,7 @@ fragment.  If it is set to <code>0</code>, this feature can be disabled.</p>
 <p>Enable completion.</p>
 <hr />
 <h3 id="lsp-lua-completion-keyword-snippet"><code>lsp-lua-completion-keyword-snippet</code><a class="headerlink" href="#lsp-lua-completion-keyword-snippet" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Disable Both Replace))</code></p>
+<p><em>Type:</em> <code>(choice (const Disable) (const Both) (const Replace))</code></p>
 <p><em>Default:</em> <code>Replace</code></p>
 <p>Shows keyword syntax snippets.</p>
 <hr />
@@ -4601,9 +4713,9 @@ tolerance for this setting. Please adjust it to the appropriate value.</p>
 <p>Whether or not to download the musl-compiled server.</p>
 <hr />
 <h3 id="lsp-lua-runtime-file-encoding"><code>lsp-lua-runtime-file-encoding</code><a class="headerlink" href="#lsp-lua-runtime-file-encoding" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag utf8 ansi))</code></p>
+<p><em>Type:</em> <code>(choice (const utf8) (const ansi))</code></p>
 <p><em>Default:</em> <code>utf8</code></p>
-<p>File encoding.  The <code>ansi</code> option is only available under the <code>Windows</code>
+<p>File encoding.  The <code>ansi' option is only available under the</code>Windows'
 platform.</p>
 <hr />
 <h3 id="lsp-lua-runtime-nonstandard-symbol"><code>lsp-lua-runtime-nonstandard-symbol</code><a class="headerlink" href="#lsp-lua-runtime-nonstandard-symbol" title="Permanent link">#</a></h3>
@@ -4638,7 +4750,7 @@ and the language server will provide special support.
 <p>Allows Unicode characters in name.</p>
 <hr />
 <h3 id="lsp-lua-runtime-version"><code>lsp-lua-runtime-version</code><a class="headerlink" href="#lsp-lua-runtime-version" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>(choice (:tag Lua 5.1 Lua 5.2 Lua 5.3 Lua 5.4 LuaJIT))</code></p>
+<p><em>Type:</em> <code>(choice (const Lua 5.1) (const Lua 5.2) (const Lua 5.3) (const Lua 5.4) (const LuaJIT))</code></p>
 <p><em>Default:</em> <code>Lua 5.4</code></p>
 <p>Lua runtime version.</p>
 <hr />
@@ -4718,7 +4830,7 @@ and <code>../lib</code> ,exclude <code>../lib/temp</code>.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2025</span>
       
     
   </small>
