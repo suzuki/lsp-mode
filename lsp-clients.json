@@ -163,6 +163,14 @@
     "debugger": "Yes (netcoredbg)"
   },
   {
+    "name": "c3-lsp",
+    "full-name": "c3 language server",
+    "server-name": "c3lsp",
+    "server-url": "https://github.com/pherrymason/c3-lsp",
+    "installation-url": "https://github.com/pherrymason/c3-lsp",
+    "debugger": "Yes (gdb or lldb)"
+  },
+  {
     "name": "ccls",
     "full-name": "C++",
     "server-name": "ccls",
@@ -583,6 +591,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "ltex-plus",
+    "full-name": "LanguageTool",
+    "server-name": "LTEX+",
+    "server-url": "https://github.com/ltex-plus/ltex-ls-plus",
+    "installation-url": "https://ltex-plus.github.io/ltex-plus/installation-usage.html",
+    "debugger": "Not available"
+  },
+  {
     "name": "emmy-lua",
     "common-group-name": "lua",
     "full-name": "Lua",
@@ -652,6 +668,14 @@
     "server-name": "marksman",
     "server-url": "https://github.com/artempyanykh/marksman",
     "installation-url": "https://github.com/artempyanykh/marksman",
+    "debugger": "Not available"
+  },
+  {
+    "name": "matlab",
+    "full-name": "MATLAB",
+    "server-name": "MATLAB language server",
+    "server-url": "https://github.com/mathworks/MATLAB-language-server",
+    "installation-url": "https://github.com/mathworks/MATLAB-language-server",
     "debugger": "Not available"
   },
   {
