@@ -1671,7 +1671,7 @@
   
     <li class="md-nav__item">
       <a href="../lsp-copilot/" class="md-nav__link">
-        Github Copilot
+        GitHub Copilot
       </a>
     </li>
   
@@ -2300,6 +2300,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-odin-ols-server.md" class="md-nav__link">
+        Odin (ols)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-openscad/" class="md-nav__link">
         OpenSCAD
       </a>
@@ -2540,6 +2554,20 @@
     <li class="md-nav__item">
       <a href="../lsp-ruff/" class="md-nav__link">
         Python (Ruff)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/astral-sh/ty" class="md-nav__link">
+        Python (ty)
       </a>
     </li>
   
@@ -2818,6 +2846,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-postgres/" class="md-nav__link">
+        SQL (postgres-ls)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-sml.md" class="md-nav__link">
         Standard ML (Millet)
       </a>
@@ -2945,7 +2987,21 @@
   
     <li class="md-nav__item">
       <a href="../lsp-toml/" class="md-nav__link">
-        TOML
+        TOML (Taplo)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lsp-toml-tombi/" class="md-nav__link">
+        TOML (Tombi)
       </a>
     </li>
   
@@ -3195,22 +3251,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-volar-activate-file" class="md-nav__link">
-    lsp-volar-activate-file
+  <a href="#lsp-volar-support-vue2" class="md-nav__link">
+    lsp-volar-support-vue2
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-volar-hybrid-mode" class="md-nav__link">
-    lsp-volar-hybrid-mode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-volar-take-over-mode" class="md-nav__link">
-    lsp-volar-take-over-mode
+  <a href="#lsp-volar-typescript-server-id" class="md-nav__link">
+    lsp-volar-typescript-server-id
   </a>
   
 </li>
@@ -3800,22 +3849,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lsp-volar-activate-file" class="md-nav__link">
-    lsp-volar-activate-file
+  <a href="#lsp-volar-support-vue2" class="md-nav__link">
+    lsp-volar-support-vue2
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lsp-volar-hybrid-mode" class="md-nav__link">
-    lsp-volar-hybrid-mode
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lsp-volar-take-over-mode" class="md-nav__link">
-    lsp-volar-take-over-mode
+  <a href="#lsp-volar-typescript-server-id" class="md-nav__link">
+    lsp-volar-typescript-server-id
   </a>
   
 </li>
@@ -3889,21 +3931,17 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
 <p><code>npm install -g @vue/language-server</code></p>
 <h3 id="debugger-not-available">Debugger: Not available<a class="headerlink" href="#debugger-not-available" title="Permanent link">#</a></h3>
 <h2 id="available-configurations">Available configurations<a class="headerlink" href="#available-configurations" title="Permanent link">#</a></h2>
-<h3 id="lsp-volar-activate-file"><code>lsp-volar-activate-file</code><a class="headerlink" href="#lsp-volar-activate-file" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>string</code></p>
-<p><em>Default:</em> <code>.volarrc</code></p>
-<p>A file with a custom name placed in WORKSPACE-ROOT is used to force enable
- volar when there is no package.json in the WORKSPACE-ROOT.</p>
-<hr />
-<h3 id="lsp-volar-hybrid-mode"><code>lsp-volar-hybrid-mode</code><a class="headerlink" href="#lsp-volar-hybrid-mode" title="Permanent link">#</a></h3>
+<h3 id="lsp-volar-support-vue2"><code>lsp-volar-support-vue2</code><a class="headerlink" href="#lsp-volar-support-vue2" title="Permanent link">#</a></h3>
 <p><em>Type:</em> <code>boolean</code></p>
 <p><em>Default:</em> <code>nil</code></p>
-<p>Enable Hybrid Mode.</p>
+<p>Whether to ping Volar`s version to ~3.0 to support vue2.</p>
+<p>Volar is dropping Vue 2 and vue-class-component Support in v3.1.
+Reference: https://github.com/vuejs/language-tools/discussions/5455</p>
 <hr />
-<h3 id="lsp-volar-take-over-mode"><code>lsp-volar-take-over-mode</code><a class="headerlink" href="#lsp-volar-take-over-mode" title="Permanent link">#</a></h3>
-<p><em>Type:</em> <code>boolean</code></p>
-<p><em>Default:</em> <code>t</code></p>
-<p>Enable Take Over Mode.</p>
+<h3 id="lsp-volar-typescript-server-id"><code>lsp-volar-typescript-server-id</code><a class="headerlink" href="#lsp-volar-typescript-server-id" title="Permanent link">#</a></h3>
+<p><em>Type:</em> <code>symbol</code></p>
+<p><em>Default:</em> <code>ts-ls</code></p>
+<p>The server id of the typescript language server to use.</p>
 <hr />
 
 <!-- Source file information -->
@@ -3913,7 +3951,7 @@ Install this language server with <kbd>M-x</kbd><code>lsp-install-server</code><
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 13, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2025</span>
       
     
   </small>
