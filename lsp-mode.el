@@ -9137,7 +9137,12 @@ When ALL is t, erase all log buffers of the running session."
                                                          buffer-name)))))))
                 (tree-widget :tag ,(propertize "Capabilities" 'face 'font-lock-function-name-face)
                              :open t
-                             ,@(-> workspace lsp--workspace-server-capabilities lsp--map-tree-widget))))
+                             ,@(-if-let (capabilities-nodes (-> workspace
+                                                                lsp--workspace-server-capabilities
+                                                                lsp--map-tree-widget))
+                                   capabilities-nodes
+                                 `((tree-widget :tag ,(propertize "No capabilities received from server"
+                                                                  'face 'font-lock-comment-face)))))))
 
 (define-derived-mode lsp-browser-mode special-mode "LspBrowser"
   "Define mode for displaying lsp sessions."
