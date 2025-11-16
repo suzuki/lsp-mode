@@ -9136,6 +9136,7 @@ When ALL is t, erase all log buffers of the running session."
                                                            (propertize buffer-name 'face 'font-lock-constant-face)
                                                          buffer-name)))))))
                 (tree-widget :tag ,(propertize "Capabilities" 'face 'font-lock-function-name-face)
+                             :open t
                              ,@(-> workspace lsp--workspace-server-capabilities lsp--map-tree-widget))))
 
 (define-derived-mode lsp-browser-mode special-mode "LspBrowser"
