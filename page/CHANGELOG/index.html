@@ -3096,6 +3096,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../lsp-typst/" class="md-nav__link">
+        Typst
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lsp-v/" class="md-nav__link">
         V
       </a>
@@ -3264,7 +3278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lsp-kubernetes-helm.md" class="md-nav__link">
+      <a href="../lsp-kubernetes-helm/" class="md-nav__link">
         YAML (helm-ls)
       </a>
     </li>
@@ -3702,7 +3716,7 @@
   
     <li class="md-nav__item">
       <a href="https://emacs-lsp.github.io/dap-mode/page/python-poetry-pyenv/" class="md-nav__link">
-        Python, debbuging with poetry + pyenv
+        Python, debugging with poetry + pyenv
       </a>
     </li>
   
@@ -3994,6 +4008,7 @@
               
                 <!--
   Copyright (c) 2016-2022 Martin Donath <martin.donath@squidfunk.com>
+  Copyright (C) 2016-2026 lsp-mode maintainers
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to
@@ -4031,6 +4046,23 @@
 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">#</a></h1>
 <h2 id="unreleased-901">Unreleased 9.0.1<a class="headerlink" href="#unreleased-901" title="Permanent link">#</a></h2>
 <ul>
+<li>Add <code>lsp-fix-all</code> command and <code>lsp-fix-all-on-save</code> option for
+    <code>source.fixAll</code> code action support (see
+    <a href="https://github.com/emacs-lsp/lsp-mode/issues/1842">#1842</a>)</li>
+<li>Add notification handlers for Deno language server
+    (<code>deno/didRefreshDenoConfigurationTree</code>,
+    <code>deno/didChangeDenoConfiguration</code>, <code>deno/didUpgradeCheck</code>).</li>
+<li>Fix "Unknown notification: semgrep/rulesRefreshed" warning in
+    lsp-semgrep client.</li>
+<li>Add <code>lsp-install-server</code> support for Deno LSP via npm.</li>
+<li>Add diagnostic and formatter custom settings for <a href="https://github.com/rcjsuen/dockerfile-language-server-nodejs">Dockerfile
+    language
+    server</a>.</li>
+<li>Fix "Eager macro-expansion failure" errors with lsp-interface pcase
+    patterns (see #4723)</li>
+<li>Add support for <a href="https://github.com/Myriad-Dreamin/tinymist">Typst
+    (Tinymist)</a> language
+    server.</li>
 <li>Add support for <code>just</code> files through just-lsp.</li>
 <li>Add support for RON files through ron-lsp.</li>
 <li>Add explicit flag to enable (or disable) JSON validation.</li>
@@ -4069,6 +4101,9 @@
     <code>["ruff" "server"]</code> instead of <code>["ruff-lsp"]</code>.</li>
 <li>Add futhark support</li>
 <li>Optimize overlay creation by checking window visibility first</li>
+<li>Optimize hook setup by avoiding unnecessary handler creation when
+    <code>lsp-enable-on-type-formatting</code> or <code>lsp-signature-auto-activate</code> are
+    disabled</li>
 <li>Replace the per-interface <code>(INTERFACE ...)</code> pcase forms with a
     single, unified <code>(lsp-interface INTERFACE ...)</code> form. The
     per-interface forms are no longer generated. <strong>This is a breaking
@@ -4132,6 +4167,8 @@
 <li>Add support for the
     <code>javascript.preferences.importModuleSpecifierEnding</code> and
     <code>typescript.preferences.importModuleSpecifierEnding</code> preferences.</li>
+<li>Fix missing ty (a fast python language server) inlay hints when
+    <code>lsp-use-plist</code> is true</li>
 </ul>
 <h2 id="900">9.0.0<a class="headerlink" href="#900" title="Permanent link">#</a></h2>
 <ul>
@@ -4714,7 +4751,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2025</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 8, 2026</span>
       
     
   </small>

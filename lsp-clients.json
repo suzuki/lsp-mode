@@ -1287,6 +1287,14 @@
     "debugger": "Not available"
   },
   {
+    "name": "typst",
+    "full-name": "Typst",
+    "server-name": "tinymist",
+    "server-url": "https://github.com/Myriad-Dreamin/tinymist",
+    "installation": "cargo install tinymist",
+    "debugger": "Not available"
+  },
+  {
     "name": "typos",
     "full-name": "Typos source code spell checker",
     "server-name": "typos-lsp",
@@ -1398,7 +1406,7 @@
     "debugger": "Not available"
   },
   {
-    "name": "helm",
+    "name": "kubernetes-helm",
     "full-name": "YAML (helm-ls)",
     "server-name": "helm-ls",
     "server-url": "https://github.com/mrjosh/helm-ls",
